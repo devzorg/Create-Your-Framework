@@ -1,5 +1,5 @@
 Введение
-============
+========
 
 Symfony2 является связкой переиспользуемых, слабосвязанных компонентов,
 решаюших большинство задач веб-разработки на PHP.
@@ -12,7 +12,7 @@ Symfony2 является связкой переиспользуемых, сл�
     к оффициальной документации `documentation`_.
 
 Почему вам хочется создать свой фреймворк?
-------------------------------------------------
+------------------------------------------
 
 Для начала разберемся в причинах, из-за чего вам хочется создать свой
 фреймворк, что вами движет? Если оглянуться вокруг, каждый скажет, что
@@ -46,34 +46,32 @@ Symfony2 является связкой переиспользуемых, сл�
     компонентах Symfony. В Silex довольно немного кода, но в в полной мере
     реализована философия Symfony2.
 
-Many modern web frameworks call themselves MVC frameworks. We won't talk about
-MVC here as the Symfony2 Components are able to create any type of frameworks,
-not just the ones that follow the MVC architecture. Anyway, if you have a look
-at the MVC semantics, this series is about how to create the Controller part
-of a framework. For the Model and the View, it really depends on your personal
-taste and I will let you use any existing third-party libraries (Doctrine,
-Propel, or plain-old PDO for the Model; PHP or Twig for the View).
+Большинство современных фреймворков объявляют себя MVC-фреймворками. Мы не
+будем обсуждать здесь MVC, потому как компоненты Symfony2 могут быть использованы
+для создания фреймворка любой архитектуры. Так или иначе, если рассматривать эту
+часть с точки зрения MVC, мы будем говорит о C - части фреймворка отвечающей, за
+организацию контроллеров. Модель и Представление зависит от ваших персональных
+предпочтений и я предлагаю вам использовать любые сторонние библиотеки для этого
+(Doctrine, Propel, или устаревший чистый PDO для Модели; PHP или `Twig`_ для Представления).
 
-When creating a framework, following the MVC pattern is not the right goal.
-The main goal should be the Separation of Concerns; I actually think that this
-is the only design pattern that you should really care about. The fundamental
-principles of the Symfony2 Components are focused on the HTTP specification.
-As such, the frameworks that we are going to create should be more accurately
-labelled as HTTP frameworks or Request/Response frameworks.
+Когда создаешь фреймворк, следование паттерну MVC не правильная цель. Основной целью
+должно стать разделение обязанностей; На самом деле я думаю это единственный архитектурный
+паттерн, о котором вам следует постоянно думать. Компоненты Symfony2 сфокусированны на
+спецификации HTTP. Таким образом следует отметить, что мы собираемся создавать
+так называемый HTTP фреймворк, или Запрос - Ответ - фреймворк.
 
-Before we start
----------------
+Прежде чем начать
+-----------------
 
-Reading about how to create a framework is not enough. You will have to follow
-along and actually type all the examples we will work on. For that, you need a
-recent version of PHP (5.3.8 or later is good enough), a web server (like
-Apache or NGinx), a good knowledge of PHP and an understanding of Object
-Oriented programming.
+Просто прочитать о создании фреймворка не достаточно. Вам прийдется проверять
+весь код, который мы напишем. Для этого вам требуется последняя версия PHP (5.3.8
+или выше будет достаточно), сервер (например Apache, или Nginx) хорошее понимание PHP и
+Объектно-ориентированного программирования.
 
-Ready to go? Let's start.
+Готовы? Начнем!
 
-Bootstrapping
--------------
+Загрузчик
+---------
 
 Before we can even think of creating our first framework, we need to talk
 about some conventions: where we will store our code, how we will name our
@@ -145,6 +143,7 @@ HttpFoundation Component and see what it brings us.
 
 .. _`documentation`:             http://symfony.com/doc
 .. _`Silex`:                     http://silex.sensiolabs.org/
+.. _`Twig`:                      http://twig.sensiolabs.org/
 .. _`autoload`:                  http://fr.php.net/autoload
 .. _`Composer`:                  http://packagist.org/about-composer
 .. _`PSR-0`:                     https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
