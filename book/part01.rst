@@ -16,26 +16,24 @@ Symfony2 является связкой переиспользуемых, сл�
 Почему вам хочется создать свой фреймворк?
 ------------------------------------------------
 
-Why would you like to create your own framework in the first place? If you
-look around, everybody will tell you that it's a bad thing to reinvent the
-wheel and that you'd better choose an existing framework and forget about
-creating your own altogether. Most of the time, they are right but I can think
-of a few good reasons to start creating your own framework:
+Для начала разберемся в причинах, из-за чего вам хочется создать свой
+фреймворк, что вами движет? Если оглянуться вокруг, каждый скажет, что
+изобретать велосипед - плохо. Возьмите что-то готовое, а о создании своего
+и думать забудьте. Скорее всего они будут правы, но я могу предложить
+несколько аргументов в поддержку идеи создания собственного фреймворка:
 
-* To learn more about the low level architecture of modern web frameworks in
-  general and about the Symfony2 full-stack framework internals in particular;
+* Узнать больше о низкоуровневой архитектуре современных веб-фреймворков в
+  общем и Symfony2 в частности;
 
-* To create a framework tailored to your very specific needs (just be sure
-  first that your needs are really specific);
+* Создать узкоспециализированную структуру приложения (только сначала убедитесь,
+  действительно ли на столько спецефична эта структура будет);
 
-* To experiment creating a framework for fun (in a learn-and-throw-away
-  approach);
+* Экспереминт, просто для развлечения (с подходом: научись и выброси);
 
-* To refactor an old/existing application that needs a good dose of recent web
-  development best practices;
+* Рефакторинг старого приложения, нуждающегося в использовании последних лучших
+  практик веб разработки;
 
-* To prove the world that you can actually create a framework on your own (...
-  but with little effort).
+* Доказать миру, что вы способны разработать свой фреймворк.
 
 I will gently guide you through the creation of a web framework, one step at a
 time. At each step, you will have a fully-working framework that you can use
