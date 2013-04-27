@@ -1,19 +1,19 @@
-Introduction
+Введение
 ============
 
-Symfony2 is a reusable set of standalone, decoupled, and cohesive PHP
-components that solve common web development problems.
+Symfony2 является связкой переиспользуемых, слабосвязанных компонентов,
+решаюших большинство задач веб-разработки на PHP.
 
-Instead of using these low-level components, you can use the ready-to-be-used
-Symfony2 full-stack web framework, which is based on these components... or
-you can create your very own framework. This series is about the latter.
+Вместо того, чтобы использовать эти низкоуровневые компоненты, вы можете взять
+готовый Symfony2, полноценный фреймворк, основанный на этих компонентах. Или же
+создать ваш собственный фреймворк. Серия этих статей как раз о втором варианте
 
 .. note::
 
-    If you just want to use the Symfony2 full-stack framework, you'd better
-    read its official `documentation`_ instead.
+    Если вы просто хотите использовать полноценный Symfony2, вам лучше обратиться
+    к оффициальной документации `documentation`_.
 
-Why would you like to create your own framework?
+Почему вам хочется создать свой фреймворк?
 ------------------------------------------------
 
 Why would you like to create your own framework in the first place? If you
